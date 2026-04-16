@@ -21,14 +21,13 @@ export function ContactSection() {
         <div className="grid gap-7 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
           <div className="space-y-5">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-cyan-100 sm:text-sm">
-              Último paso
+              {gymData.contactSection.eyebrow}
             </p>
             <h2 className="max-w-xl text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-              Tu próxima rutina empieza con un mensaje hoy.
+              {gymData.contactSection.title}
             </h2>
             <p className="max-w-2xl text-sm leading-relaxed text-zinc-100/90 sm:text-base">
-              Escribinos por WhatsApp y coordinamos tu clase de prueba según objetivo, nivel y
-              horarios. Respuesta rápida y sin compromiso.
+              {gymData.contactSection.description}
             </p>
 
             <a
@@ -36,7 +35,7 @@ export function ContactSection() {
               className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-cyan-300 px-6 py-4 text-sm font-semibold text-zinc-950 shadow-[0_20px_46px_-22px_rgba(34,211,238,0.85)] transition hover:bg-cyan-200 sm:w-auto"
             >
               <MessageCircle size={18} aria-hidden />
-              Quiero empezar esta semana
+              {gymData.contactSection.ctaLabel}
             </a>
           </div>
 
@@ -46,7 +45,7 @@ export function ContactSection() {
                 <MapPin size={18} className="mt-0.5 shrink-0 text-cyan-200" aria-hidden />
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-100/90">
-                    Dirección
+                    {gymData.contactSection.addressLabel}
                   </p>
                   <p className="mt-1 leading-relaxed text-zinc-100">{gymData.address}</p>
                 </div>
@@ -55,7 +54,7 @@ export function ContactSection() {
                 <Clock3 size={18} className="mt-0.5 shrink-0 text-cyan-200" aria-hidden />
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-100/90">
-                    Horarios
+                    {gymData.contactSection.hoursLabel}
                   </p>
                   <p className="mt-1 leading-relaxed text-zinc-100">{gymData.hours}</p>
                 </div>
@@ -64,7 +63,7 @@ export function ContactSection() {
                 <AtSign size={18} className="mt-0.5 shrink-0 text-cyan-200" aria-hidden />
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-100/90">
-                    Instagram
+                    {gymData.contactSection.instagramLabel}
                   </p>
                   <a
                     href={gymData.instagramUrl}

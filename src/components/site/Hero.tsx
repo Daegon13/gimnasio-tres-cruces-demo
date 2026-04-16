@@ -9,7 +9,7 @@ export function Hero() {
       <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
         <div className="space-y-8">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-cyan-300/80 sm:text-sm">
-            Rendimiento real · Coaches expertos · Comunidad que empuja
+            {gymData.hero.eyebrow}
           </p>
 
           <div className="space-y-4">
@@ -23,16 +23,16 @@ export function Hero() {
 
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
-              href={gymData.whatsappUrl}
+              href={gymData.hero.primaryCtaHref}
               className="rounded-full bg-cyan-300 px-7 py-3 text-center text-sm font-semibold text-zinc-950 shadow-[0_18px_44px_-20px_rgba(34,211,238,0.8)] transition hover:bg-cyan-200"
             >
-              Quiero mi clase de prueba
+              {gymData.hero.primaryCtaLabel}
             </a>
             <a
-              href="#actividades"
+              href={gymData.hero.secondaryCtaHref}
               className="rounded-full border border-white/25 px-7 py-3 text-center text-sm font-semibold text-white transition hover:border-white/50 hover:bg-white/10"
             >
-              Ver actividades
+              {gymData.hero.secondaryCtaLabel}
             </a>
           </div>
 
@@ -52,19 +52,19 @@ export function Hero() {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage:
-                "url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80')",
+              backgroundImage: `url('${gymData.hero.imageUrl}')`,
             }}
-            aria-hidden
+            role="img"
+            aria-label={gymData.hero.imageAlt}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/45 to-black/30" aria-hidden />
 
           <div className="relative flex h-full items-end p-6 sm:p-8">
             <div className="max-w-sm space-y-2">
-              <p className="text-xs uppercase tracking-[0.2em] text-zinc-300">Método Tres Cruces</p>
-              <p className="text-xl font-semibold text-white sm:text-2xl">
-                Entrená con foco, progresá con datos, mantenete con hábitos sólidos.
+              <p className="text-xs uppercase tracking-[0.2em] text-zinc-300">
+                {gymData.hero.highlightEyebrow}
               </p>
+              <p className="text-xl font-semibold text-white sm:text-2xl">{gymData.hero.highlightText}</p>
             </div>
           </div>
         </div>

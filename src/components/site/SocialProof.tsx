@@ -13,11 +13,11 @@ export function SocialProof() {
       <div className="space-y-4">
         <div className="inline-flex items-center gap-2 rounded-full border border-emerald-300/25 bg-emerald-300/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-emerald-200 sm:text-sm">
           <ShieldCheck size={16} aria-hidden />
-          Validado por la comunidad
+          {gymData.socialProofSection.badgeLabel}
         </div>
 
         <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-          La confianza se gana con acompañamiento constante y progreso real.
+          {gymData.socialProofSection.title}
         </h2>
       </div>
 

@@ -17,10 +17,10 @@ export function Benefits() {
     >
       <div className="space-y-3">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-cyan-300/80 sm:text-sm">
-          Por qué elegir Tres Cruces
+          {gymData.benefitsSection.eyebrow}
         </p>
         <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-          Beneficios concretos para entrenar con confianza y mantener resultados.
+          {gymData.benefitsSection.title}
         </h2>
       </div>
 
