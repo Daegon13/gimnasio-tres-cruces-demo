@@ -30,22 +30,24 @@ export type GymData = {
 
 export const gymData: GymData = {
   name: "Gimnasio Tres Cruces",
-  headline: "Entrená fuerte. Viví mejor.",
+  headline: "Resultados visibles con un plan que sí podés sostener.",
   subheadline:
-    "Una experiencia premium de entrenamiento funcional, musculación y comunidad en Montevideo.",
+    "Entrenamiento guiado, seguimiento personalizado y comunidad real para mejorar fuerza, energía y salud en Montevideo.",
   primaryCtaLabel: "Agendá tu clase de prueba",
   primaryCtaHref: "#contacto",
-  secondaryCtaLabel: "Ver planes",
+  secondaryCtaLabel: "Ver actividades",
   benefits: [
     {
       icon: "award",
-      title: "10+ años de resultados comprobados",
-      description: "Miles de alumnos sostienen su progreso con un método que prioriza técnica y constancia.",
+      title: "Más de 10 años de resultados medibles",
+      description:
+        "Un método probado en miles de alumnos que combina técnica, progresión y adherencia a largo plazo.",
     },
     {
       icon: "coaching",
-      title: "Seguimiento real de coaches certificados",
-      description: "Cada clase corrige ejecución y carga para que avances sin entrenar a ciegas.",
+      title: "Coaches presentes en cada sesión",
+      description:
+        "Corregimos ejecución y ajuste de cargas en tiempo real para que avances con seguridad y foco.",
     },
     {
       icon: "equipment",
@@ -54,8 +56,9 @@ export const gymData: GymData = {
     },
     {
       icon: "schedule",
-      title: "Horarios amplios para rutina estable",
-      description: "Abrimos de 6:00 a 22:00 para que puedas entrenar incluso con agenda exigente.",
+      title: "Horarios amplios para sostener el hábito",
+      description:
+        "Abrimos de 6:00 a 22:00 para que puedas entrenar incluso con trabajo, estudio o agenda exigente.",
     },
   ],
   activities: [
@@ -75,7 +78,7 @@ export const gymData: GymData = {
       name: "HIIT",
       focus: "Alta intensidad",
       level: "Intermedio a avanzado",
-      description: "Sesiones cortas e intensas para elevar tu capacidad cardiovascular y quemar calorías.",
+      description: "Sesiones breves y exigentes para mejorar capacidad cardiovascular y acelerar el gasto calórico.",
     },
     {
       name: "Indoor Cycling",
@@ -93,21 +96,22 @@ export const gymData: GymData = {
   testimonials: [
     {
       name: "Lucía M.",
-      quote: "En 3 meses mejoré mi energía y constancia como nunca antes.",
+      quote: "En tres meses recuperé energía y constancia. Hoy entrenar es parte fija de mi semana.",
     },
     {
       name: "Martín R.",
-      quote: "Gran equipo y clima humano. Venir a entrenar ya es parte de mi rutina.",
+      quote: "Se nota el nivel del equipo y el acompañamiento. Mejoré fuerza sin lesionarme.",
     },
     {
       name: "Sofía P.",
-      quote: "Me sentí acompañada desde el día uno y ahora entrenar es parte de mi semana.",
+      quote: "Llegué con cero experiencia y me sentí acompañada desde la primera clase.",
     },
   ],
-  howItWorksSteps: ["Escribinos", "Te orientamos", "Empezá esta semana"],
+  howItWorksSteps: ["Escribinos por WhatsApp", "Definimos tu plan inicial", "Empezá esta semana"],
   address: "Bulevar Artigas 1820, Tres Cruces, Montevideo",
   hours: "Lunes a viernes 06:00 a 22:00 · Sábados 08:00 a 14:00",
   instagramUrl: "https://instagram.com/gimnasiotrescruces",
-  whatsappUrl: "https://wa.me/59800000000",
+  whatsappUrl:
+    "https://wa.me/59891234567?text=Hola%20Gimnasio%20Tres%20Cruces%2C%20quiero%20agendar%20mi%20clase%20de%20prueba.",
   trustBadges: ["+10 años", "+2.500 alumnos", "4.9★ reseñas"],
 };

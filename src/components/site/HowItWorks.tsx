@@ -15,7 +15,7 @@ export function HowItWorks() {
           Cómo empezar
         </p>
         <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-          Tres pasos simples para arrancar esta misma semana.
+          Tres pasos simples para empezar a entrenar con dirección.
         </h2>
         <p className="max-w-3xl text-sm leading-relaxed text-zinc-300 sm:text-base">
           Te acompañamos desde el primer mensaje para que sepas exactamente qué hacer y cuándo
