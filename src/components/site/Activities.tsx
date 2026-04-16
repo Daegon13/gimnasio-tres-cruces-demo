@@ -10,14 +10,13 @@ export function Activities() {
     >
       <div className="space-y-3">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-cyan-300/80 sm:text-sm">
-          Oferta de entrenamientos
+          {gymData.activitiesSection.eyebrow}
         </p>
         <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-          Actividades para objetivos reales y niveles distintos.
+          {gymData.activitiesSection.title}
         </h2>
         <p className="max-w-3xl text-sm leading-relaxed text-zinc-300 sm:text-base">
-          Elegí tu modalidad según tu ritmo: desde base técnica y fuerza hasta sesiones de alta
-          intensidad para mejorar rendimiento y resistencia.
+          {gymData.activitiesSection.description}
         </p>
       </div>
 
@@ -33,7 +32,7 @@ export function Activities() {
             <h3 className="mt-3 text-xl font-semibold text-white">{activity.name}</h3>
             <p className="mt-2 text-sm leading-relaxed text-zinc-300">{activity.description}</p>
             <span className="mt-4 inline-flex rounded-full border border-white/15 px-3 py-1 text-xs font-medium text-zinc-200">
-              Nivel: {activity.level}
+              {gymData.activitiesSection.levelLabel}: {activity.level}
             </span>
           </article>
         ))}

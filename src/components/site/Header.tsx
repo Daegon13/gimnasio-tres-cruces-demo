@@ -1,11 +1,5 @@
 import { gymData } from "@/data/gym";
 
-const navItems = [
-  { label: "Actividades", href: "#actividades" },
-  { label: "Cómo empezar", href: "#como-empezar" },
-  { label: "Contacto", href: "#contacto" },
-];
-
 export function Header() {
   return (
     <header className="sticky top-0 z-30 border-b border-white/10 bg-zinc-950/70 backdrop-blur-xl">
@@ -15,7 +9,7 @@ export function Header() {
         </a>
 
         <nav className="hidden items-center gap-6 md:flex">
-          {navItems.map((item) => (
+          {gymData.navItems.map((item) => (
             <a
               key={item.label}
               href={item.href}
@@ -27,10 +21,10 @@ export function Header() {
         </nav>
 
         <a
-          href={gymData.whatsappUrl}
+          href={gymData.hero.primaryCtaHref}
           className="rounded-full bg-white px-4 py-2.5 text-center text-xs font-semibold text-zinc-950 shadow-[0_12px_32px_-22px_rgba(255,255,255,0.8)] transition hover:bg-zinc-100 sm:px-5 sm:text-sm"
         >
-          Agendá tu clase de prueba
+          {gymData.hero.primaryCtaLabel}
         </a>
       </div>
     </header>

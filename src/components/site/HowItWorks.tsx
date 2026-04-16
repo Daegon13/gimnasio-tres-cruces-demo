@@ -12,14 +12,13 @@ export function HowItWorks() {
     >
       <div className="space-y-3">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-cyan-300/80 sm:text-sm">
-          Cómo empezar
+          {gymData.howItWorksSection.eyebrow}
         </p>
         <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-          Tres pasos simples para empezar a entrenar con dirección.
+          {gymData.howItWorksSection.title}
         </h2>
         <p className="max-w-3xl text-sm leading-relaxed text-zinc-300 sm:text-base">
-          Te acompañamos desde el primer mensaje para que sepas exactamente qué hacer y cuándo
-          empezar, sin vueltas.
+          {gymData.howItWorksSection.description}
         </p>
       </div>
 
@@ -36,7 +35,7 @@ export function HowItWorks() {
                 <Icon size={20} aria-hidden />
               </span>
               <p className="mt-4 text-xs font-semibold uppercase tracking-[0.16em] text-cyan-200/90">
-                Paso {index + 1}
+                {gymData.howItWorksSection.stepLabel} {index + 1}
               </p>
               <h3 className="mt-2 text-xl font-semibold text-white">{step}</h3>
             </li>
