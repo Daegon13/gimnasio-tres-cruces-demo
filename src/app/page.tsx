@@ -5,10 +5,11 @@ import { Activities } from "@/components/site/Activities";
 import { SocialProof } from "@/components/site/SocialProof";
 import { HowItWorks } from "@/components/site/HowItWorks";
 import { ContactSection } from "@/components/site/ContactSection";
+import { StickyCta } from "@/components/site/StickyCta";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-transparent">
+    <main className="min-h-screen bg-transparent pb-28 md:pb-0">
       <Header />
       <Hero />
       <Benefits />
@@ -16,6 +17,7 @@ export default function Home() {
       <Activities />
       <HowItWorks />
       <ContactSection />
+      <StickyCta />
     </main>
   );
 }

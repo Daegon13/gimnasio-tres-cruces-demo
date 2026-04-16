@@ -6,7 +6,10 @@ export function SocialProof() {
   const testimonials = gymData.testimonials.slice(0, 3);
 
   return (
-    <section id="testimonios" className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8 sm:py-16">
+    <section
+      id="testimonios"
+      className="mx-auto w-full max-w-6xl scroll-mt-24 px-5 py-16 sm:scroll-mt-28 sm:px-8 sm:py-20"
+    >
       <div className="space-y-4">
         <div className="inline-flex items-center gap-2 rounded-full border border-emerald-300/25 bg-emerald-300/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-emerald-200 sm:text-sm">
           <ShieldCheck size={16} aria-hidden />

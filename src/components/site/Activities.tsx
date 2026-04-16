@@ -4,7 +4,10 @@ export function Activities() {
   const featuredActivities = gymData.activities.slice(0, 6);
 
   return (
-    <section id="actividades" className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8 sm:py-16">
+    <section
+      id="actividades"
+      className="mx-auto w-full max-w-6xl scroll-mt-24 px-5 py-16 sm:scroll-mt-28 sm:px-8 sm:py-20"
+    >
       <div className="space-y-3">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-cyan-300/80 sm:text-sm">
           Oferta de entrenamientos

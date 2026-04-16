@@ -13,7 +13,10 @@ export function ContactSection() {
   const instagramHandle = getInstagramHandle(gymData.instagramUrl);
 
   return (
-    <section id="contacto" className="mx-auto w-full max-w-6xl px-5 pb-20 pt-14 sm:px-8 sm:pb-24 sm:pt-16">
+    <section
+      id="contacto"
+      className="mx-auto w-full max-w-6xl scroll-mt-24 px-5 pb-24 pt-16 sm:scroll-mt-28 sm:px-8 sm:pb-28 sm:pt-20"
+    >
       <div className="overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-cyan-400/25 via-cyan-300/10 to-violet-400/20 p-6 shadow-[0_24px_80px_-45px_rgba(45,212,191,0.75)] sm:p-8 lg:p-10">
         <div className="grid gap-7 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
           <div className="space-y-5">
