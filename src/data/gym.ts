@@ -10,7 +10,12 @@ export type GymData = {
     title: string;
     description: string;
   }>;
-  activities: string[];
+  activities: Array<{
+    name: string;
+    focus: string;
+    level: string;
+    description: string;
+  }>;
   testimonials: Array<{
     name: string;
     quote: string;
@@ -52,7 +57,38 @@ export const gymData: GymData = {
       description: "Abrimos de 6:00 a 22:00 para que puedas entrenar incluso con agenda exigente.",
     },
   ],
-  activities: ["Musculación", "Funcional", "HIIT", "Indoor Cycling", "Movilidad"],
+  activities: [
+    {
+      name: "Musculación",
+      focus: "Fuerza y composición corporal",
+      level: "Inicial a avanzado",
+      description: "Planificá cargas y técnica con acompañamiento para ganar masa muscular de forma segura.",
+    },
+    {
+      name: "Funcional",
+      focus: "Movimientos integrales",
+      level: "Todos los niveles",
+      description: "Mejorá coordinación, estabilidad y condición física general con circuitos dinámicos.",
+    },
+    {
+      name: "HIIT",
+      focus: "Alta intensidad",
+      level: "Intermedio a avanzado",
+      description: "Sesiones cortas e intensas para elevar tu capacidad cardiovascular y quemar calorías.",
+    },
+    {
+      name: "Indoor Cycling",
+      focus: "Resistencia y cardio",
+      level: "Inicial a intermedio",
+      description: "Entrená ritmo y resistencia con clases guiadas de ciclismo indoor llenas de energía.",
+    },
+    {
+      name: "Movilidad",
+      focus: "Flexibilidad y prevención",
+      level: "Todos los niveles",
+      description: "Recuperá rango de movimiento, mejorá postura y prevení molestias en tu día a día.",
+    },
+  ],
   testimonials: [
     {
       name: "Lucía M.",
