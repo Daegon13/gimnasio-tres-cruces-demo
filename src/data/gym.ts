@@ -33,7 +33,7 @@ export const gymData: GymData = {
   headline: "Entrená fuerte. Viví mejor.",
   subheadline:
     "Una experiencia premium de entrenamiento funcional, musculación y comunidad en Montevideo.",
-  primaryCtaLabel: "Reservar clase de prueba",
+  primaryCtaLabel: "Agendá tu clase de prueba",
   primaryCtaHref: "#contacto",
   secondaryCtaLabel: "Ver planes",
   benefits: [

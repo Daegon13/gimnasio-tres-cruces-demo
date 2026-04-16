@@ -2,7 +2,10 @@ import { gymData } from "@/data/gym";
 
 export function Hero() {
   return (
-    <section id="inicio" className="mx-auto w-full max-w-6xl px-5 pb-16 pt-10 sm:px-8 sm:pt-14 lg:pt-20">
+    <section
+      id="inicio"
+      className="mx-auto w-full max-w-6xl scroll-mt-24 px-5 pb-16 pt-10 sm:scroll-mt-28 sm:px-8 sm:pb-20 sm:pt-14 lg:pt-20"
+    >
       <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
         <div className="space-y-8">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-cyan-300/80 sm:text-sm">
