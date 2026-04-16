@@ -5,7 +5,11 @@ export type GymData = {
   primaryCtaLabel: string;
   primaryCtaHref: string;
   secondaryCtaLabel: string;
-  benefits: string[];
+  benefits: Array<{
+    icon: "award" | "coaching" | "equipment" | "schedule";
+    title: string;
+    description: string;
+  }>;
   activities: string[];
   testimonials: Array<{
     name: string;
@@ -27,9 +31,26 @@ export const gymData: GymData = {
   primaryCtaHref: "#contacto",
   secondaryCtaLabel: "Ver planes",
   benefits: [
-    "Coaches certificados con seguimiento real",
-    "Clases dinámicas para todos los niveles",
-    "Instalaciones modernas y ambiente motivador",
+    {
+      icon: "award",
+      title: "10+ años de resultados comprobados",
+      description: "Miles de alumnos sostienen su progreso con un método que prioriza técnica y constancia.",
+    },
+    {
+      icon: "coaching",
+      title: "Seguimiento real de coaches certificados",
+      description: "Cada clase corrige ejecución y carga para que avances sin entrenar a ciegas.",
+    },
+    {
+      icon: "equipment",
+      title: "Equipamiento completo y bien mantenido",
+      description: "Zona de fuerza, funcional y cardio lista para entrenar en serio, sin esperas eternas.",
+    },
+    {
+      icon: "schedule",
+      title: "Horarios amplios para rutina estable",
+      description: "Abrimos de 6:00 a 22:00 para que puedas entrenar incluso con agenda exigente.",
+    },
   ],
   activities: ["Musculación", "Funcional", "HIIT", "Indoor Cycling", "Movilidad"],
   testimonials: [
