@@ -1,4 +1,5 @@
 import { Hero } from "@/components/site/Hero";
+import { Benefits } from "@/components/site/Benefits";
 import { Header } from "@/components/site/Header";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main className="min-h-screen bg-transparent">
       <Header />
       <Hero />
+      <Benefits />
 
       <section id="actividades" className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-8">
         <h2 className="text-2xl font-semibold text-white">Actividades</h2>
