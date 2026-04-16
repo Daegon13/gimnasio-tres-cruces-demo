@@ -4,43 +4,39 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="mx-auto w-full max-w-6xl scroll-mt-24 px-5 pb-16 pt-10 sm:scroll-mt-28 sm:px-8 sm:pb-20 sm:pt-14 lg:pt-20"
+      className="mx-auto w-full max-w-6xl scroll-mt-24 px-5 pb-16 pt-10 sm:scroll-mt-28 sm:px-8 sm:pb-20 sm:pt-14 lg:pt-18"
     >
-      <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-        <div className="space-y-8">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-cyan-300/80 sm:text-sm">
-            {gymData.hero.eyebrow}
-          </p>
+      <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+        <div className="space-y-7">
+          <p className="text-xs font-bold uppercase tracking-[0.22em] text-lime-300 sm:text-sm">{gymData.hero.eyebrow}</p>
 
-          <div className="space-y-4">
-            <h1 className="text-balance text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <div className="space-y-3">
+            <h1 className="text-balance text-4xl font-black uppercase leading-[0.95] tracking-tight text-white sm:text-5xl lg:text-6xl">
               {gymData.headline}
             </h1>
-            <p className="max-w-xl text-pretty text-base text-zinc-300 sm:text-lg">
-              {gymData.subheadline}
-            </p>
+            <p className="max-w-xl text-pretty text-base font-medium text-zinc-200 sm:text-lg">{gymData.subheadline}</p>
           </div>
 
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
               href={gymData.hero.primaryCtaHref}
-              className="rounded-full bg-cyan-300 px-7 py-3 text-center text-sm font-semibold text-zinc-950 shadow-[0_18px_44px_-20px_rgba(34,211,238,0.8)] transition hover:bg-cyan-200"
+              className="rounded-full bg-lime-300 px-7 py-3 text-center text-sm font-black uppercase tracking-[0.06em] text-zinc-950 shadow-[0_18px_44px_-20px_rgba(182,255,42,0.85)] transition hover:bg-lime-200"
             >
               {gymData.hero.primaryCtaLabel}
             </a>
             <a
               href={gymData.hero.secondaryCtaHref}
-              className="rounded-full border border-white/25 px-7 py-3 text-center text-sm font-semibold text-white transition hover:border-white/50 hover:bg-white/10"
+              className="rounded-full border border-lime-300/40 px-7 py-3 text-center text-sm font-bold uppercase tracking-[0.06em] text-white transition hover:border-lime-300 hover:bg-lime-300/10"
             >
               {gymData.hero.secondaryCtaLabel}
             </a>
           </div>
 
           <ul className="flex flex-wrap gap-2 sm:gap-3">
-            {gymData.trustBadges.slice(0, 3).map((badge) => (
+            {gymData.trustBadges.map((badge) => (
               <li
                 key={badge}
-                className="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-medium text-zinc-200 sm:text-sm"
+                className="rounded-full border border-lime-300/35 bg-zinc-900 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.08em] text-lime-100 sm:text-sm"
               >
                 {badge}
               </li>
@@ -48,7 +44,7 @@ export function Hero() {
           </ul>
         </div>
 
-        <div className="relative min-h-[320px] overflow-hidden rounded-3xl border border-white/15 bg-zinc-900 shadow-[0_24px_80px_-45px_rgba(45,212,191,0.75)] sm:min-h-[440px]">
+        <div className="relative min-h-[360px] overflow-hidden rounded-3xl border border-lime-300/25 bg-zinc-900 shadow-[0_24px_80px_-50px_rgba(182,255,42,0.7)] sm:min-h-[460px]">
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
@@ -57,14 +53,25 @@ export function Hero() {
             role="img"
             aria-label={gymData.hero.imageAlt}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/45 to-black/30" aria-hidden />
+          <div className="absolute inset-0 bg-gradient-to-tr from-black/90 via-black/45 to-lime-500/35" aria-hidden />
 
-          <div className="relative flex h-full items-end p-6 sm:p-8">
-            <div className="max-w-sm space-y-2">
-              <p className="text-xs uppercase tracking-[0.2em] text-zinc-300">
-                {gymData.hero.highlightEyebrow}
-              </p>
-              <p className="text-xl font-semibold text-white sm:text-2xl">{gymData.hero.highlightText}</p>
+          <div className="relative flex h-full flex-col justify-between p-6 sm:p-8">
+            <span className="inline-flex w-fit rounded-full bg-lime-300 px-3 py-1 text-xs font-black uppercase tracking-[0.1em] text-zinc-950">
+              {gymData.hero.highlightEyebrow}
+            </span>
+
+            <div className="space-y-4">
+              <p className="max-w-sm text-2xl font-black leading-tight text-white sm:text-3xl">{gymData.hero.highlightText}</p>
+              <ul className="flex flex-wrap gap-2">
+                {gymData.hero.chips.map((chip) => (
+                  <li
+                    key={chip}
+                    className="rounded-full border border-white/40 bg-black/45 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.08em] text-zinc-100"
+                  >
+                    {chip}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

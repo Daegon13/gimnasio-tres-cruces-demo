@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #07090f;
-  --foreground: #f5f7ff;
-  --surface: #111421;
-  --surface-strong: #171b2b;
-  --border-subtle: rgba(255, 255, 255, 0.12);
-  --font-sans: Inter, system-ui, -apple-system, sans-serif;
+  --background: #101111;
+  --foreground: #f8faf8;
+  --surface: #181a18;
+  --surface-strong: #232723;
+  --border-subtle: rgba(182, 255, 42, 0.22);
+  --font-sans: "Inter", "Arial Narrow", system-ui, -apple-system, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -25,9 +25,9 @@ body {
   min-height: 100vh;
   margin: 0;
   background:
-    radial-gradient(circle at 20% -20%, rgba(130, 100, 255, 0.25), transparent 40%),
-    radial-gradient(circle at 90% 0%, rgba(0, 192, 255, 0.18), transparent 30%),
-    linear-gradient(180deg, #0a0d16 0%, var(--background) 45%, #05070d 100%);
+    radial-gradient(circle at 10% -10%, rgba(182, 255, 42, 0.24), transparent 32%),
+    radial-gradient(circle at 85% 0%, rgba(120, 255, 80, 0.14), transparent 36%),
+    linear-gradient(180deg, #151716 0%, var(--background) 46%, #0a0a0a 100%);
   color: var(--foreground);
   font-family: var(--font-sans);
 }
@@ -38,6 +38,6 @@ html {
 }
 
 ::selection {
-  background: rgba(188, 167, 255, 0.38);
-  color: #ffffff;
+  background: rgba(182, 255, 42, 0.35);
+  color: #0f1308;
 }
