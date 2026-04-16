@@ -16,10 +16,8 @@ export function Benefits() {
       className="mx-auto w-full max-w-6xl scroll-mt-24 px-5 py-16 sm:scroll-mt-28 sm:px-8 sm:py-20"
     >
       <div className="space-y-3">
-        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-cyan-300/80 sm:text-sm">
-          {gymData.benefitsSection.eyebrow}
-        </p>
-        <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+        <p className="text-xs font-bold uppercase tracking-[0.22em] text-lime-300 sm:text-sm">{gymData.benefitsSection.eyebrow}</p>
+        <h2 className="max-w-3xl text-3xl font-black uppercase tracking-tight text-white sm:text-4xl">
           {gymData.benefitsSection.title}
         </h2>
       </div>
@@ -31,13 +29,13 @@ export function Benefits() {
           return (
             <article
               key={benefit.title}
-              className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] backdrop-blur"
+              className="rounded-2xl border border-zinc-800 bg-zinc-900 p-5 shadow-[0_12px_28px_-20px_rgba(0,0,0,0.9)]"
             >
-              <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-cyan-300/25 bg-cyan-300/10 text-cyan-200">
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-lime-300 text-zinc-950">
                 <Icon size={20} aria-hidden />
               </span>
-              <h3 className="mt-4 text-lg font-semibold text-white">{benefit.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-zinc-300">{benefit.description}</p>
+              <h3 className="mt-4 text-lg font-extrabold uppercase tracking-[0.02em] text-white">{benefit.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-zinc-200">{benefit.description}</p>
             </article>
           );
         })}

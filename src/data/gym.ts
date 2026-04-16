@@ -2,6 +2,18 @@ export type GymData = {
   name: string;
   metadataTitle: string;
   metadataDescription: string;
+  visualTokens: {
+    primary: string;
+    dark: string;
+    light: string;
+    accent: string;
+  };
+  businessInfo: {
+    address: string;
+    hours: string;
+    instagramUrl: string;
+    whatsappUrl: string;
+  };
   headline: string;
   subheadline: string;
   navItems: Array<{
@@ -18,6 +30,7 @@ export type GymData = {
     imageAlt: string;
     highlightEyebrow: string;
     highlightText: string;
+    chips: string[];
   };
   benefitsSection: {
     eyebrow: string;
@@ -64,145 +77,150 @@ export type GymData = {
     hoursLabel: string;
     instagramLabel: string;
   };
-  address: string;
-  hours: string;
-  instagramUrl: string;
-  whatsappUrl: string;
   trustBadges: string[];
 };
 
 export const gymData: GymData = {
   name: "Gimnasio Tres Cruces",
-  metadataTitle: "Gimnasio Tres Cruces | Entrenamiento personalizado en Montevideo",
+  metadataTitle: "Gimnasio Tres Cruces | Entrenamiento guiado en Montevideo",
   metadataDescription:
-    "Entrenamiento guiado con coaches presentes, planes personalizados y comunidad real para sostener resultados.",
-  headline: "Resultados visibles con un plan que sí podés sostener.",
+    "Entrenamientos dirigidos, actividades para todos los niveles y acompañamiento real para empezar esta semana.",
+  visualTokens: {
+    primary: "#B6FF2A",
+    dark: "#111212",
+    light: "#F8FAF8",
+    accent: "#2A2F2A",
+  },
+  businessInfo: {
+    address: "Bulevar Artigas 1820, Tres Cruces, Montevideo",
+    hours: "Lunes a viernes 06:00 a 22:00 · Sábados 08:00 a 14:00",
+    instagramUrl: "https://instagram.com/gimnasiotrescruces",
+    whatsappUrl: "https://wa.me/59891234567",
+  },
+  headline: "Entrená con energía real y un equipo que te acompaña de verdad.",
   subheadline:
-    "Entrenamiento guiado, seguimiento personalizado y comunidad real para mejorar fuerza, energía y salud en Montevideo.",
+    "Musculación, funcional, cycling y más actividades para todas las edades y objetivos. Arrancá esta semana en Tres Cruces.",
   navItems: [
     { label: "Actividades", href: "#actividades" },
     { label: "Cómo empezar", href: "#como-empezar" },
     { label: "Contacto", href: "#contacto" },
   ],
   hero: {
-    eyebrow: "Rendimiento real · Coaches expertos · Comunidad que empuja",
-    primaryCtaLabel: "Quiero mi clase de prueba",
-    primaryCtaHref: "https://wa.me/59891234567?text=Hola%20Gimnasio%20Tres%20Cruces%2C%20quiero%20agendar%20mi%20clase%20de%20prueba.",
+    eyebrow: "Entrenamientos dirigidos · Todos los niveles · Comunidad activa",
+    primaryCtaLabel: "Reservar por WhatsApp",
+    primaryCtaHref:
+      "https://wa.me/59891234567?text=Hola%20Gimnasio%20Tres%20Cruces%2C%20quiero%20coordinar%20mi%20clase%20de%20prueba.",
     secondaryCtaLabel: "Ver actividades",
     secondaryCtaHref: "#actividades",
     imageUrl:
-      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Personas entrenando en una sala de gimnasio moderna.",
-    highlightEyebrow: "Método Tres Cruces",
-    highlightText: "Entrená con foco, progresá con datos, mantenete con hábitos sólidos.",
+      "https://images.unsplash.com/photo-1570829460005-c840387bb1ca?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Personas entrenando fuerza y cardio en un gimnasio con mucha energía.",
+    highlightEyebrow: "Gimnasio Tres Cruces",
+    highlightText: "Clases, sala y seguimiento personalizado para que no entrenes solo.",
+    chips: ["Musculación", "Funcional", "Cycling", "Acompañamiento real"],
   },
   benefitsSection: {
-    eyebrow: "Por qué elegir Tres Cruces",
-    title: "Beneficios concretos para entrenar con confianza y mantener resultados.",
+    eyebrow: "Entrená con respaldo",
+    title: "Un gimnasio de barrio con propuesta completa y foco en resultados reales.",
   },
   benefits: [
     {
       icon: "award",
-      title: "Más de 10 años de resultados medibles",
+      title: "Plan adaptado a tu objetivo",
       description:
-        "Un método probado en miles de alumnos que combina técnica, progresión y adherencia a largo plazo.",
+        "Subir masa, bajar grasa, recuperar estado físico o mejorar rendimiento: te guiamos paso a paso.",
     },
     {
       icon: "coaching",
-      title: "Coaches presentes en cada sesión",
+      title: "Profes atentos en sala y clases",
       description:
-        "Corregimos ejecución y ajuste de cargas en tiempo real para que avances con seguridad y foco.",
+        "No entrenás a ciegas: hay acompañamiento para técnica, carga y constancia desde el día uno.",
     },
     {
       icon: "equipment",
-      title: "Equipamiento completo y bien mantenido",
-      description: "Zona de fuerza, funcional y cardio lista para entrenar en serio, sin esperas eternas.",
+      title: "Sala completa para entrenar en serio",
+      description:
+        "Máquinas, peso libre y zonas funcionales para trabajar todo el cuerpo sin vueltas.",
     },
     {
       icon: "schedule",
-      title: "Horarios amplios para sostener el hábito",
-      description:
-        "Abrimos de 6:00 a 22:00 para que puedas entrenar incluso con trabajo, estudio o agenda exigente.",
+      title: "Horarios amplios y ritmo flexible",
+      description: "Podés entrenar temprano, al mediodía o después del trabajo, según tu rutina.",
     },
   ],
   activitiesSection: {
-    eyebrow: "Oferta de entrenamientos",
-    title: "Actividades para objetivos reales y niveles distintos.",
+    eyebrow: "Actividades",
+    title: "Elegí cómo entrenar: variedad real para no abandonar.",
     description:
-      "Elegí tu modalidad según tu ritmo: desde base técnica y fuerza hasta sesiones de alta intensidad para mejorar rendimiento y resistencia.",
+      "Combiná clases y sala según tu nivel. Tenemos opciones para empezar de cero o potenciar tu entrenamiento actual.",
     levelLabel: "Nivel",
   },
   activities: [
     {
       name: "Musculación",
-      focus: "Fuerza y composición corporal",
+      focus: "Fuerza y recomposición",
       level: "Inicial a avanzado",
-      description: "Planificá cargas y técnica con acompañamiento para ganar masa muscular de forma segura.",
+      description: "Rutinas guiadas para ganar fuerza, tono y masa muscular con buena técnica.",
     },
     {
       name: "Funcional",
-      focus: "Movimientos integrales",
+      focus: "Movimiento integral",
       level: "Todos los niveles",
-      description: "Mejorá coordinación, estabilidad y condición física general con circuitos dinámicos.",
+      description: "Circuitos dinámicos para mejorar agilidad, resistencia y coordinación general.",
     },
     {
       name: "HIIT",
-      focus: "Alta intensidad",
+      focus: "Intensidad alta",
       level: "Intermedio a avanzado",
-      description: "Sesiones breves y exigentes para mejorar capacidad cardiovascular y acelerar el gasto calórico.",
+      description: "Bloques cortos y potentes para activar cardio y acelerar resultados.",
     },
     {
       name: "Indoor Cycling",
-      focus: "Resistencia y cardio",
+      focus: "Cardio con ritmo",
       level: "Inicial a intermedio",
-      description: "Entrená ritmo y resistencia con clases guiadas de ciclismo indoor llenas de energía.",
+      description: "Clases con música y energía para trabajar resistencia y quema calórica.",
     },
     {
       name: "Movilidad",
-      focus: "Flexibilidad y prevención",
+      focus: "Recuperación y postura",
       level: "Todos los niveles",
-      description: "Recuperá rango de movimiento, mejorá postura y prevení molestias en tu día a día.",
+      description: "Mejorá amplitud de movimiento y prevení molestias en entrenamientos y vida diaria.",
     },
   ],
   socialProofSection: {
-    badgeLabel: "Validado por la comunidad",
-    title: "La confianza se gana con acompañamiento constante y progreso real.",
+    badgeLabel: "Comunidad Tres Cruces",
+    title: "La mejor prueba es ver gente real entrenando, mejorando y volviendo cada semana.",
   },
   testimonials: [
     {
       name: "Lucía M.",
-      quote: "En tres meses recuperé energía y constancia. Hoy entrenar es parte fija de mi semana.",
+      quote: "Volví a entrenar después de años y me sentí cómoda desde el primer día.",
     },
     {
       name: "Martín R.",
-      quote: "Se nota el nivel del equipo y el acompañamiento. Mejoré fuerza sin lesionarme.",
+      quote: "Buen ambiente, profes arriba y clases con energía. Se nota el cambio rápido.",
     },
     {
       name: "Sofía P.",
-      quote: "Llegué con cero experiencia y me sentí acompañada desde la primera clase.",
+      quote: "Me ordenaron la rutina y hoy entreno constante sin lesiones ni excusas.",
     },
   ],
   howItWorksSection: {
-    eyebrow: "Cómo empezar",
-    title: "Tres pasos simples para empezar a entrenar con dirección.",
-    description:
-      "Te acompañamos desde el primer mensaje para que sepas exactamente qué hacer y cuándo empezar, sin vueltas.",
+    eyebrow: "Empezá fácil",
+    title: "Te sumás en tres pasos simples.",
+    description: "Nos escribís, coordinamos tu objetivo y arrancás con una propuesta clara para vos.",
     stepLabel: "Paso",
   },
-  howItWorksSteps: ["Escribinos por WhatsApp", "Definimos tu plan inicial", "Empezá esta semana"],
+  howItWorksSteps: ["Escribinos por WhatsApp", "Coordinamos horario y plan", "Empezá a entrenar esta semana"],
   contactSection: {
     eyebrow: "Último paso",
-    title: "Tu próxima rutina empieza con un mensaje hoy.",
+    title: "Tu lugar para entrenar está acá, en Tres Cruces.",
     description:
-      "Escribinos por WhatsApp y coordinamos tu clase de prueba según objetivo, nivel y horarios. Respuesta rápida y sin compromiso.",
-    ctaLabel: "Quiero empezar esta semana",
+      "Mandanos un WhatsApp y te ayudamos a elegir actividad, horarios y plan según tu nivel. Respuesta rápida.",
+    ctaLabel: "Quiero coordinar mi clase",
     addressLabel: "Dirección",
     hoursLabel: "Horarios",
     instagramLabel: "Instagram",
   },
-  address: "Bulevar Artigas 1820, Tres Cruces, Montevideo",
-  hours: "Lunes a viernes 06:00 a 22:00 · Sábados 08:00 a 14:00",
-  instagramUrl: "https://instagram.com/gimnasiotrescruces",
-  whatsappUrl: "https://wa.me/59891234567",
-  trustBadges: ["+10 años", "+2.500 alumnos", "4.9★ reseñas"],
+  trustBadges: ["Variedad de actividades", "Todos los niveles", "Acompañamiento constante", "Comunidad activa"],
 };
