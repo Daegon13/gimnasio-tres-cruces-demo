@@ -28,7 +28,7 @@ export function Header() {
 
         <a
           href={gymData.whatsappUrl}
-          className="rounded-full bg-white px-4 py-2 text-center text-xs font-semibold text-zinc-950 transition hover:bg-zinc-100 sm:px-5 sm:text-sm"
+          className="rounded-full bg-white px-4 py-2.5 text-center text-xs font-semibold text-zinc-950 shadow-[0_12px_32px_-22px_rgba(255,255,255,0.8)] transition hover:bg-zinc-100 sm:px-5 sm:text-sm"
         >
           Agendá tu clase de prueba
         </a>

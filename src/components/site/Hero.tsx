@@ -14,24 +14,23 @@ export function Hero() {
 
           <div className="space-y-4">
             <h1 className="text-balance text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
-              Transformá tu cuerpo con entrenamientos que no negocian resultados.
+              {gymData.headline}
             </h1>
             <p className="max-w-xl text-pretty text-base text-zinc-300 sm:text-lg">
-              Clases intensas, seguimiento personalizado y energía de equipo para que avances cada
-              semana desde el primer día.
+              {gymData.subheadline}
             </p>
           </div>
 
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
               href={gymData.whatsappUrl}
-              className="rounded-full bg-cyan-300 px-7 py-3 text-center text-sm font-semibold text-zinc-950 transition hover:bg-cyan-200"
+              className="rounded-full bg-cyan-300 px-7 py-3 text-center text-sm font-semibold text-zinc-950 shadow-[0_18px_44px_-20px_rgba(34,211,238,0.8)] transition hover:bg-cyan-200"
             >
               Quiero mi clase de prueba
             </a>
             <a
               href="#actividades"
-              className="rounded-full border border-white/25 px-7 py-3 text-center text-sm font-semibold text-white transition hover:border-white/50 hover:bg-white/5"
+              className="rounded-full border border-white/25 px-7 py-3 text-center text-sm font-semibold text-white transition hover:border-white/50 hover:bg-white/10"
             >
               Ver actividades
             </a>
@@ -49,7 +48,7 @@ export function Hero() {
           </ul>
         </div>
 
-        <div className="relative min-h-[320px] overflow-hidden rounded-3xl border border-white/10 bg-zinc-900 sm:min-h-[440px]">
+        <div className="relative min-h-[320px] overflow-hidden rounded-3xl border border-white/15 bg-zinc-900 shadow-[0_24px_80px_-45px_rgba(45,212,191,0.75)] sm:min-h-[440px]">
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{

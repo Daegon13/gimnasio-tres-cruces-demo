@@ -20,7 +20,7 @@ export function Benefits() {
           Por qué elegir Tres Cruces
         </p>
         <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-          Beneficios concretos para entrenar con confianza desde el primer día.
+          Beneficios concretos para entrenar con confianza y mantener resultados.
         </h2>
       </div>
 

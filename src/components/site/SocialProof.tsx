@@ -17,7 +17,7 @@ export function SocialProof() {
         </div>
 
         <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-          La confianza se construye entrenando juntos, semana a semana.
+          La confianza se gana con acompañamiento constante y progreso real.
         </h2>
       </div>
 

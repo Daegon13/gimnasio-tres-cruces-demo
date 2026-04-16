@@ -17,7 +17,7 @@ export function ContactSection() {
       id="contacto"
       className="mx-auto w-full max-w-6xl scroll-mt-24 px-5 pb-24 pt-16 sm:scroll-mt-28 sm:px-8 sm:pb-28 sm:pt-20"
     >
-      <div className="overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-cyan-400/25 via-cyan-300/10 to-violet-400/20 p-6 shadow-[0_24px_80px_-45px_rgba(45,212,191,0.75)] sm:p-8 lg:p-10">
+      <div className="overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-br from-cyan-400/30 via-cyan-300/10 to-violet-400/25 p-6 shadow-[0_28px_90px_-45px_rgba(45,212,191,0.85)] sm:p-8 lg:p-10">
         <div className="grid gap-7 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
           <div className="space-y-5">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-cyan-100 sm:text-sm">
@@ -27,13 +27,13 @@ export function ContactSection() {
               Tu próxima rutina empieza con un mensaje hoy.
             </h2>
             <p className="max-w-2xl text-sm leading-relaxed text-zinc-100/90 sm:text-base">
-              Escribinos por WhatsApp y te respondemos con una orientación clara según tu objetivo,
-              nivel y horarios disponibles.
+              Escribinos por WhatsApp y coordinamos tu clase de prueba según objetivo, nivel y
+              horarios. Respuesta rápida y sin compromiso.
             </p>
 
             <a
               href={gymData.whatsappUrl}
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-cyan-300 px-6 py-4 text-sm font-semibold text-zinc-950 transition hover:bg-cyan-200 sm:w-auto"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-cyan-300 px-6 py-4 text-sm font-semibold text-zinc-950 shadow-[0_20px_46px_-22px_rgba(34,211,238,0.85)] transition hover:bg-cyan-200 sm:w-auto"
             >
               <MessageCircle size={18} aria-hidden />
               Quiero empezar esta semana
