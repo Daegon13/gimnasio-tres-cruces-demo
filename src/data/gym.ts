@@ -98,6 +98,10 @@ export const gymData: GymData = {
       name: "Martín R.",
       quote: "Gran equipo y clima humano. Venir a entrenar ya es parte de mi rutina.",
     },
+    {
+      name: "Sofía P.",
+      quote: "Me sentí acompañada desde el día uno y ahora entrenar es parte de mi semana.",
+    },
   ],
   address: "Bulevar Artigas 1820, Tres Cruces, Montevideo",
   hours: "Lunes a viernes 06:00 a 22:00 · Sábados 08:00 a 14:00",
