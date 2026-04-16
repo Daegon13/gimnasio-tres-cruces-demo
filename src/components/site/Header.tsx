@@ -2,8 +2,8 @@ import { gymData } from "@/data/gym";
 
 const navItems = [
   { label: "Actividades", href: "#actividades" },
-  { label: "Horarios", href: "#horarios" },
-  { label: "Ubicación", href: "#ubicacion" },
+  { label: "Cómo empezar", href: "#como-empezar" },
+  { label: "Contacto", href: "#contacto" },
 ];
 
 export function Header() {

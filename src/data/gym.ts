@@ -20,6 +20,7 @@ export type GymData = {
     name: string;
     quote: string;
   }>;
+  howItWorksSteps: [string, string, string];
   address: string;
   hours: string;
   instagramUrl: string;
@@ -103,6 +104,7 @@ export const gymData: GymData = {
       quote: "Me sentí acompañada desde el día uno y ahora entrenar es parte de mi semana.",
     },
   ],
+  howItWorksSteps: ["Escribinos", "Te orientamos", "Empezá esta semana"],
   address: "Bulevar Artigas 1820, Tres Cruces, Montevideo",
   hours: "Lunes a viernes 06:00 a 22:00 · Sábados 08:00 a 14:00",
   instagramUrl: "https://instagram.com/gimnasiotrescruces",
