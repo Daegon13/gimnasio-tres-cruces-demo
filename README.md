@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gimnasio Tres Cruces Demo
 
-## Getting Started
+Landing page desarrollada con Next.js 16 (App Router).
 
-First, run the development server:
+## Requisitos
+
+- Node.js `20.9` o superior.
+- npm `10` o superior.
+
+## Desarrollo local
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrí [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build de producción
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+## Deploy en Vercel
 
-To learn more about Next.js, take a look at the following resources:
+La app ya está preparada para desplegarse en Vercel sin configuración extra.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Subí este repositorio a GitHub/GitLab/Bitbucket.
+2. En Vercel, elegí **Add New > Project**.
+3. Importá el repositorio y mantené los valores detectados por defecto:
+   - **Framework Preset:** Next.js
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `.next` (automático)
+4. Deploy.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Variables de entorno
 
-## Deploy on Vercel
+Actualmente no son obligatorias para que la app funcione. Si agregás alguna en el futuro, replicala en:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `.env.local` para desarrollo.
+- **Project Settings > Environment Variables** en Vercel.
